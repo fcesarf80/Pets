@@ -64,14 +64,15 @@ legend {
     cursor: pointer;
 }
 
-.actions {
-    display: flex;
-    gap: 1em;
-}
 .btn-2 {
     margin-left: auto;
     background-color:rgb(246, 24, 24);
     color:white;
     border: none;
     cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    gap: 1em;
 }

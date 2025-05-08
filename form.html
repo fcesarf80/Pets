@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding-bottom: 100vh;
+        }
+
+        fieldset {
+            width: 21.875rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: right; */
+            margin: .5rem;
+        }
+        
+        input {
+            margin: .2rem;
+            padding: .2em;
+        }
+
+        .btn-1 {
+          margin-left: auto;
+          background-color: rgb(24, 202, 246);
+          color:white;
+          border: none;
+          cursor: pointer;
+          padding: .4em;
+          border-radius: .4em;
+}
+
+        .btn-2 {
+          margin-left: auto;
+          background-color:rgb(246, 24, 24);
+          color:white;
+          border: none;
+          cursor: pointer;
+          padding: .4em;
+          border-radius: .4em;
+}
+
+       .actions {
+          text-align: right;          
+}
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Introduction</legend>
+            <label for="">Email</label>
+            <input type="email" name="Email">
+            <label for="children">How many children do you have?</label>
+            <input type="number" id="children" min="0" max="10">
+            <p><input type="date" min="2025-01-15">
+
+        </p>Do you have extra activities?
+        <label>
+            <input type="radio" name="extra_activity" value="yes">Yes
+        </label>
+        <label>
+            <input type="radio" name="extra_activity" value="no">No</p>
+        </label>
+            
+        </fieldset>
+
+        <fieldset>
+            <legend>Area of interest:</legend>
+            <label><input type="checkbox" name="interest" value="html">HTML</label>
+            <label><input type="checkbox" name="interest" value="css">CSS</label>
+            <label><input type="checkbox" name="interest" value="javascript">Javascript</label>
+            <label><input type="checkbox" name="interest" value="python">Python</label>
+            <label><input type="checkbox" name="interest" value="java">Java</label>
+            
+            
+
+        <label >Select 
+            <br>
+            <select name="language"required multiple size="4"></option>
+                <optgroup label="small breed">
+                    <option value="">a dog breed...</option>
+                    <option value="Bulldog">French Bulldog</option>
+                    <option value="Pomeranian">Pomeranian</option> 
+                    <option value="Poodle">Poodle</option>
+                    <option value="Beagle">Beagle</option>
+                </optgroup>
+                <optgroup label="medium breed"></optgroup>
+                    <option value="Collie">Border Collie</option>
+                    <option value="Labrador">Labrador Retriever</option>
+                </optgroup>
+            </select>
+
+
+<input type="text" list="linguagemList">
+<datalist id="linguagemList">
+
+    <option value="White">
+    <option value="Black">
+    <option value="Red">
+    <option value="Green">
+    <option value="Yellow">
+    <option value="Blue">
+</datalist>
+
+
+
+
+        </label>
+        </fieldset>
+
+        <input type="submit" value="Send">
+
+        <!-- <input type="text"> -->
+        
+        <div class="actions">
+            <input type="submit" value="Send" class="btn-1">
+            <input type="reset" value="Clean" class="btn-2">                
+        </div>
+    </form>
+    
+</body>
+</html>
