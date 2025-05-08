@@ -1,0 +1,77 @@
+html {
+    background-color: #95a5a6;
+    font-family: "Helvetca Neue", Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /*vh = 'view port', à área visível de uma página da web dentro de um navegador ou dispositivo*/
+    margin: 0;
+}
+
+form{
+    width: 21.875rem;/*=350px -> rem = 'root em', uma
+     unidade de medida baseada no tamanho da fonte do elemento raiz, tornando-o uma medida flexível e escalável. */
+    background-color: #ecf0f1;
+    border-radius: 0.313rem; /*5px*/
+    box-shadow: 0.188rem 0.188rem 0.625rem #333;
+    padding: 1em;
+}
+
+fieldset{
+    border:none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    margin-bottom: .25em;
+}
+
+input,
+label{
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input {
+    padding: .6em;
+    border-radius: 0.313em;
+    margin-bottom: 1em;
+    border: 0,063em solid #bbb;
+    font-size: 1em;
+}
+
+legend {
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    color: #454e4f;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+.btn-1 {
+    /* width: fit-content; */
+    margin-left: auto;
+    background-color: rgb(24, 202, 246);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    gap: 1em;
+}
+.btn-2 {
+    margin-left: auto;
+    background-color:rgb(246, 24, 24);
+    color:white;
+    border: none;
+    cursor: pointer;
+}
