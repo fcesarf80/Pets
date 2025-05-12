@@ -53,6 +53,17 @@
     </style>
 </head>
 <body>
+    <h2>Formulário de busca</h2>
+    
+    <form action="https://www.google.com.br/search" method="get">
+        <label for="busca">Faça uma busca</label>      
+        <input type="text" name="q" id="busca">
+        <input type="submit" value="OK">
+    </form>
+    
+
+<hr>
+
     <form>
         <fieldset>
             <legend>Introduction</legend>
@@ -79,10 +90,7 @@
             <label><input type="checkbox" name="interest" value="javascript">Javascript</label>
             <label><input type="checkbox" name="interest" value="python">Python</label>
             <label><input type="checkbox" name="interest" value="java">Java</label>
-            
-            
-
-        <label >Select 
+         <label >Select 
             <br>
             <select name="language"required multiple size="4"></option>
                 <optgroup label="small breed">
@@ -100,31 +108,30 @@
 
 
 <input type="text" list="linguagemList">
-<datalist id="linguagemList">
-
-    <option value="White">
-    <option value="Black">
-    <option value="Red">
-    <option value="Green">
-    <option value="Yellow">
-    <option value="Blue">
-</datalist>
-
-
-
-
+    <datalist id="linguagemList">
+       <option value="White">
+       <option value="Black">
+       <option value="Red">
+       <option value="Green">
+       <option value="Yellow">
+       <option value="Blue">
+    </datalist>
         </label>
         </fieldset>
 
         <input type="submit" value="Send">
-
+        
         <!-- <input type="text"> -->
         
         <div class="actions">
             <input type="submit" value="Send" class="btn-1">
             <input type="reset" value="Clean" class="btn-2">                
         </div>
+        <hr>
     </form>
+
+
+    
     
 </body>
 </html>
