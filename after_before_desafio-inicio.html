@@ -14,6 +14,19 @@
         input[type="checkbox"]:checked + label {
             color:green;
         }
+
+        input[type="checkbox"]:not(:disabled)+ label {
+            color:red;
+        }
+
+        input[type="checkbox"]:disable+label {
+            color: blue; 
+        }
+
+        li li:nth-child(3){
+            background-color: yellow;
+        }
+
     </style>
 
 </head>
