@@ -5,6 +5,16 @@
     <meta charset="UTF-8">
 
     <title>Seletores de atributos</title>
+    <style>
+        a[:target="_blank"]::after {
+            ::content: :url(icon_pdf-ico.gif);
+            margi-left: .5em;
+        }
+
+        input[type="checkbox"]:checked + label {
+            color:green;
+        }
+    </style>
 
 </head>
 
