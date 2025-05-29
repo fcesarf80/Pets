@@ -11,31 +11,88 @@
             outline: 1px solid #888;
             width: 250px;
             margin: .5em auto;
+            padding: 1rem;
         }
         p {
-            width: 50%;
+            width: 100%;
+        }
+        .destaque:only-child{
+            color: red;
+        }
+        .dest1::first-letter {
+            color: red;
+            font-size: 3em;
+            font-weight:600;
+            float: left; /*Posiciona letra à esquerda*/
+            margin-right: 0.2em; /* Espaço letra/texto */
         }
         .destaque {
             background-color: yellow;
+            color: black;
+            border: 2px solid #3c3434;
+            padding: .4rem;
         }
         .div1 .destaque {
-            transform: translate(50%);
+            transform: translate(50%, 100%);
         }
         .div2 .destaque {
             position: relative;
             left: 25%;
+            top: 50%;
+        }
+        .div3 .destaque {
+            transform: rotate(-25deg);
+        }
+        .div4 .destaque {
+            transform: scale(1.5, 1);
+        }
+        .div5 .destaque {
+            transform: skew(20deg);
+        }
+        .div6 .destaque {
+            transform: translate(20px) rotate(30deg);
+            transform-origin: left top;           
+        }
+        .div7 .destaque {
+            transform: rotate(45deg) translate(150px);
+            transform-origin: 50px -200px;            
         }
     </style>
 </head>
 <body>
     <div class="div1">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
-        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="dest1">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.span</p>
+        <p class="destaque">1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
     </div>
     <div class="div2">
+        <p class="dest1">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="destaque">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
-        <p class="destaque">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+    </div>
+    <div class="div3">
+        <p class="dest1">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="destaque">3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+    </div>
+    <div class="div4">
+        <p class="dest1">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="destaque">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+    </div>
+    <div class="div5">
+        <p class="dest1">5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="destaque">5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+    </div>
+    <div class="div6">
+        <p class="dest1">6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="destaque">6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+    </div>
+    <div class="div7">
+        <p class="dest1">7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
+        <p class="destaque">7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, architecto.</p>
     </div>
 </body>
