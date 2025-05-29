@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkbox</title>
+    <style>
+        h3 {
+            text-align: right;
+        }
+        .chk1[type=checkbox]{
+            display: none;
+        }
+        .chk1+label span {
+            display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            height: 1em;
+            background-color: red;
+        }
+        .chk1:checked+label span {
+            background-color: blue;
+            position: relative;
+        }
+        .chk1:checked+label span::before {
+            content:"";
+            display: block;
+            border: 2px solid white;
+            position: absolute;
+            top:.077em;
+            left: .38em;
+            bottom: .30em;
+            right: .30em;
+            transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+        }
+
+    .lbl2 span {
+        display: inline-block;
+            font-size: 20px;
+            width: 1em;
+            height: 1em;
+            background-color: red;
+            position: relative;
+            transition: backgroud-color .3s;
+    }
+    .lbl2 input[type="checkbox"]:checked+span{
+        background-color: blue;        
+    }
+    .lbl2 input[type="checkbox"]+span::before{
+        content:"";
+        display: block;
+        border: 2px solid white;
+        position: absolute;
+        top:.077em;
+        left: .38em;
+        bottom: .30em;
+        right: .30em;
+        transform: rotate(45deg);
+        border-left-color: transparent;
+        border-top-color: transparent;
+        opacity: 0; 
+        transition: opacity .5s;  
+    }
+    .lbl2 input[type="checkbox"]:checked+span::before{
+        opacity: 1;
+    }
+    .lbl2 input[type="checkbox"] {
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+        position: absolute;
+        outline: none;
+    }
+    .lbl2 input[type="checkbox"]:focus+span{
+        outline: 2px solid black; /*ao contrario do 'border', o 'outtline' não altera o tamanho do elemento, pois ele fica para fora*/
+        outline-offset: -2px;
+        box-sizing: border-box;/*impede que a cx pule para frente*/
+    }
+    </style>
+</head>
+<body>
+    <h1>Checkbox</h1>
+    <h3>Seção 14 class #172</h3>
+    <input type="checkbox" id="html" checked class="chk1">
+    <label for="html">
+        <span></span>
+        HTML
+    </label>
+    <input type="checkbox" id="CSS" class="chk1">
+    <label for="CSS">
+        <span></span>
+        CSS
+    </label>
+    <input type="checkbox" id="JS" class="chk1">
+    <label for="JS">
+        <span></span>
+        Javascript
+    </label>
+    <hr>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+    <label class="lbl2">
+        <input type="checkbox">
+        <span></span>
+        Javascript
+    </label>
+    
+    
+</body>
+</html>
