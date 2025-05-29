@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>variables</title>
+    <style>
+        :root {
+            --success-color: green;
+            --error-color: red;
+        }
+        body {
+            --error-color: orange;
+            color: whitesmoke;
+            background-color: rgb(22, 13, 47);
+        }
+        .container {
+            --error-color: pink;
+        }
+        .div2{
+            --error-color: yellow;
+        }
+        b {
+            color: var(--error-color,);
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="div1">
+        <p>Lorem, ipsum <b>dolor</b>.</p>
+    </div>
+       <div class="div2">
+        <p>Lorem, <b>ipsum</b> dolor.</p>
+    </div>
+</div>
+    <p>teste</p>
+    &#x1f1e7;&#x1f1f7    
+</body>
+</html>
