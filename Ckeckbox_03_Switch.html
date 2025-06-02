@@ -79,10 +79,33 @@
         outline-offset: -2px;
         box-sizing: border-box;/*impede que a cx pule para frente*/
     }
+
+    .switch {
+        --switch-color: #cfd8dc;
+    }
+    .switch span {
+        display: inline-block;
+        width: 2em;
+        height: 1em;
+        border-radius: 1em;
+        outline: 2px solid var(--switch-color);
+    }
+    .switch span::after {
+        content:"";
+        display: block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: red;
+        transition: transform .2s ease-in-out;
+    }
+    .switch input:checked+span::after{
+        transform: translateX(100%);
+    }
     </style>
 </head>
 <body>
-    <h1>Checkbox 3</h1>
+    <h1>Checkbox 3 - Switch</h1>
     <h3>Seção 14 class #173</h3>
     
     <label class="lbl2">
@@ -101,7 +124,22 @@
         Javascript
     </label>
     <hr>
-    
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        HTML
+    </label>
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        CSS
+    </label>
+    <label class="switch">
+        <input type="checkbox">
+        <span></span>
+        Javascript
+    </label>
+    <hr>
     
 </body>
 </html>
